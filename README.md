@@ -39,7 +39,7 @@ Each line starts with the utterance id, followed by the ground truth words and f
 ```
 If an utterance was not aligned (see unaligned.txt), there will be simply no line for it.
 
-The list of words and of end times are surrounded by double quotes, and the items are seperated by commas. **Silences are represented as empty words**, e.g. in the first sentence there is a silence from 0s to 0.49s and the word 'BUT' is pronounced from 0.49s to 0.89s. **Each sentence is guaranteed to start and end with a silence, even if its duration is 0**, this is for parsing convenience.
+The list of words and of end times are surrounded by double quotes, and the items are seperated by commas. **Silences are represented as empty words**, e.g. in the first sentence there is a silence from 0s to 0.49s and the word 'GO' is pronounced from 0.49s to 0.89s. **Each sentence is guaranteed to start and end with a silence, even if its duration is 0**, this is for parsing convenience.
 
 ## Format (TextGrid alignments)
 For each utterance you will find a .TextGrid file, e.g.:  
