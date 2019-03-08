@@ -5,6 +5,7 @@ import os
 
 # This script serves as example to parsing the txt alignments. It will iterate over all 
 # utterances of the dataset, split utterances on silences that are longer 0.4s and play them.
+# (this does not change your files)
 
 librispeech_root = "E:/Datasets/Librispeech"    # Replace with yours
 
@@ -13,7 +14,6 @@ def split_on_silences(audio_fpath, words, end_times):
     sample_rate = 16000     # Sampling rate of LibriSpeech 
     wav, _ = librosa.load(audio_fpath, sample_rate)
     
-    # Find pauses in the sentence
     words = np.array(words)
     start_times = np.array([0.0] + end_times[:-1])
     end_times = np.array(end_times)
