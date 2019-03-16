@@ -19,7 +19,7 @@ The prepared alignments come in two formats:
 
 Once downloaded, merge the LibriSpeech directory with the original LibriSpeech dataset (only the directory structure will be merged, no files should be overwritten in the process).
  
-**Warning:** for both archives there will be a set of unaligned utterances (see unaligned.txt), for these files there will simply be no alignment present, so take that into account in your parsers. There are 46 utterances unaligned in the TextGrid alignments (from failures of the model) and 127 in the simple alignments (46 carried out from the first and 81 from being unable to match the text to the ground truth text). I wouldn't bother trying to annotate those in another way, as they still account for less than ~0.05% of the whole dataset.
+**Warning:** for both archives there will be a set of unaligned utterances (see unaligned.txt), for these files there will simply be no alignment present, so take that into account in your parsers. There are 46 utterances unaligned in the raw TextGrid alignments (from failures of the model) and 127 in the simple format alignments (46 carried out from the first and 81 from being unable to match the text to the ground truth text). I wouldn't bother trying to annotate those in another way, as they still account for less than ~0.05% of the whole dataset.
 
 ## Format (TXT alignments)
 For each book you will find a <book_id>.alignment.txt file, e.g.:  
