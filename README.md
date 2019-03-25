@@ -22,7 +22,7 @@ Once downloaded, merge the LibriSpeech directory with the original LibriSpeech d
 **Warning:** for both archives there will be a set of unaligned utterances (see unaligned.txt), for these files there will simply be no alignment present, so take that into account in your parsers. There are 46 utterances unaligned in the raw TextGrid alignments (from failures of the model) and 127 in the simple format alignments (46 carried out from the first and 81 from being unable to match the text to the ground truth text). I wouldn't bother trying to annotate those in another way, as they still account for less than ~0.05% of the whole dataset.
 
 ## Format (TXT alignments)
-For each book you will find a <book_id>.alignment.txt file, e.g.:  
+**[If you downloaded the first file]:** For each book you will find a <book_id>.alignment.txt file, e.g.:  
 ```
 LibriSpeech/dev-clean/84/121123:
  - 84-121123.alignment.txt
@@ -42,7 +42,7 @@ If an utterance was not aligned (see unaligned.txt), there will be simply no lin
 The list of words and of end times are surrounded by double quotes, and the items are seperated by commas. **Silences are represented as empty words**, e.g. in the first sentence there is a silence from 0s to 0.49s and the word 'GO' is pronounced from 0.49s to 0.89s. **Each sentence is guaranteed to start and end with a silence, even if its duration is 0**, this is for parsing convenience.
 
 ## Format (TextGrid alignments)
-For each utterance you will find a .TextGrid file, e.g.:  
+**[If you downloaded the second file]:**For each utterance you will find a .TextGrid file, e.g.:  
 ```
 LibriSpeech/dev-clean/84/121123:
  - 84-121123.trans.txt
