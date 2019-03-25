@@ -42,7 +42,7 @@ If an utterance was not aligned (see unaligned.txt), there will be simply no lin
 The list of words and of end times are surrounded by double quotes, and the items are seperated by commas. **Silences are represented as empty words**, e.g. in the first sentence there is a silence from 0s to 0.49s and the word 'GO' is pronounced from 0.49s to 0.89s. **Each sentence is guaranteed to start and end with a silence, even if its duration is 0**, this is for parsing convenience.
 
 ## Format (TextGrid alignments)
-**[If you downloaded the second file]:**For each utterance you will find a .TextGrid file, e.g.:  
+**[If you downloaded the second file]:** For each utterance you will find a .TextGrid file, e.g.:  
 ```
 LibriSpeech/dev-clean/84/121123:
  - 84-121123.trans.txt
